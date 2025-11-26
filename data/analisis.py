@@ -15,7 +15,7 @@ sns.set_style("whitegrid")
 plt.rcParams['figure.figsize'] = (12, 6)
 
 # Cargar datos
-df = pd.read_csv('data/Student_performance_data_.csv')
+df = pd.read_csv('data/Student_performance_data.csv')
 
 print("="*80)
 print("ENTENDIMIENTO DE LOS DATOS")
