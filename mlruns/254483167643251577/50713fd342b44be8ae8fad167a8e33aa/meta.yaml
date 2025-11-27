@@ -1,0 +1,16 @@
+artifact_uri: file:///home/marcejllo06/Taller3_MLOps/mlruns/254483167643251577/50713fd342b44be8ae8fad167a8e33aa/artifacts
+deleted_time: 1764205786541
+end_time: 1764204349015
+entry_point_name: ''
+experiment_id: '254483167643251577'
+lifecycle_stage: deleted
+run_id: 50713fd342b44be8ae8fad167a8e33aa
+run_name: Iteration 4
+run_uuid: 50713fd342b44be8ae8fad167a8e33aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764204348993
+status: 3
+tags: []
+user_id: marcejllo06

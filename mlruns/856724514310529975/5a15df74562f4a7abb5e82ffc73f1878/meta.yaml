@@ -1,0 +1,15 @@
+artifact_uri: file:///home/marcejllo06/Taller3_MLOps/mlruns/856724514310529975/5a15df74562f4a7abb5e82ffc73f1878/artifacts
+end_time: 1764206442860
+entry_point_name: ''
+experiment_id: '856724514310529975'
+lifecycle_stage: active
+run_id: 5a15df74562f4a7abb5e82ffc73f1878
+run_name: Iteration 8
+run_uuid: 5a15df74562f4a7abb5e82ffc73f1878
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764206442833
+status: 3
+tags: []
+user_id: marcejllo06

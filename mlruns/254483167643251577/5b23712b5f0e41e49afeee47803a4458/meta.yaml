@@ -1,0 +1,16 @@
+artifact_uri: file:///home/marcejllo06/Taller3_MLOps/mlruns/254483167643251577/5b23712b5f0e41e49afeee47803a4458/artifacts
+deleted_time: 1764205625647
+end_time: 1764205526675
+entry_point_name: ''
+experiment_id: '254483167643251577'
+lifecycle_stage: deleted
+run_id: 5b23712b5f0e41e49afeee47803a4458
+run_name: GradientBoosting_Optimization
+run_uuid: 5b23712b5f0e41e49afeee47803a4458
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764205507173
+status: 3
+tags: []
+user_id: marcejllo06

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/marcejllo06/Taller3_MLOps/mlruns/856724514310529975/c95b073c5b894fda89c4dadc4ede80a0/artifacts
+end_time: 1764206450548
+entry_point_name: ''
+experiment_id: '856724514310529975'
+lifecycle_stage: active
+run_id: c95b073c5b894fda89c4dadc4ede80a0
+run_name: GradientBoosting_Optimization
+run_uuid: c95b073c5b894fda89c4dadc4ede80a0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764206435850
+status: 3
+tags: []
+user_id: marcejllo06

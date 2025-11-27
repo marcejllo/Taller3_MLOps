@@ -1,0 +1,16 @@
+artifact_uri: file:///home/marcejllo06/Taller3_MLOps/mlruns/856724514310529975/c4953fa6303443d6a10661808140172d/artifacts
+deleted_time: 1764206507726
+end_time: 1764206459706
+entry_point_name: ''
+experiment_id: '856724514310529975'
+lifecycle_stage: deleted
+run_id: c4953fa6303443d6a10661808140172d
+run_name: Ridge_Optimization
+run_uuid: c4953fa6303443d6a10661808140172d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764206459684
+status: 4
+tags: []
+user_id: marcejllo06

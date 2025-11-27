@@ -1,0 +1,16 @@
+artifact_uri: file:///home/marcejllo06/Taller3_MLOps/mlruns/254483167643251577/6726857fae4945a98033eae3361a6893/artifacts
+deleted_time: 1764205625654
+end_time: 1764204671911
+entry_point_name: ''
+experiment_id: '254483167643251577'
+lifecycle_stage: deleted
+run_id: 6726857fae4945a98033eae3361a6893
+run_name: RandomForest_Optimization
+run_uuid: 6726857fae4945a98033eae3361a6893
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764204653541
+status: 4
+tags: []
+user_id: marcejllo06
