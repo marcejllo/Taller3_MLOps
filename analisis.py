@@ -40,7 +40,7 @@ print("\n4. ANÁLISIS DE LA VARIABLE OBJETIVO: GPA")
 print(f"Media: {df['GPA'].mean():.2f}")
 print(f"Mediana: {df['GPA'].median():.2f}")
 print(f"Desviación estándar: {df['GPA'].std():.2f}")
-print(f"Rango: [{df['GPA'].min():.2f}, {df['GPA'].max():.2f}]")
+
 
 # Visualizaciones
 fig, axes = plt.subplots(2, 3, figsize=(15, 10))
@@ -79,6 +79,10 @@ axes[1, 2].set_title('GPA por Actividades Extracurriculares')
 
 plt.tight_layout()
 plt.savefig('exploratory_analysis.png', dpi=300, bbox_inches='tight')
+<<<<<<< HEAD:analisis.py
+=======
+
+>>>>>>> 8cb55db1fb9613e4345c41af9e46e7e1636d3c38:data/analisis.py
 
 # Correlaciones con GPA
 print("\n5. CORRELACIONES CON GPA (Variables numéricas)")
@@ -92,5 +96,9 @@ sns.heatmap(df[numeric_cols].corr(), annot=True, fmt='.2f', cmap='coolwarm', cen
 plt.title('Matriz de Correlación - Variables Numéricas')
 plt.tight_layout()
 plt.savefig('correlation_matrix.png', dpi=300, bbox_inches='tight')
+<<<<<<< HEAD:analisis.py
 
 
+=======
+print("\n✓ Matriz de correlación guardada en 'correlation_matrix.png'")
+>>>>>>> 8cb55db1fb9613e4345c41af9e46e7e1636d3c38:data/analisis.py
