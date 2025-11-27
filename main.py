@@ -1,11 +1,11 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, ValidationError, Field
-from pandas import DataFrame
 import joblib
 import boto3
 import json
 from datetime import datetime
 import numpy as np
+import pandas as pd
 
 S3_BUCKET = "taller3-mlops"         
 S3_PREFIX = "student-predictions/"
@@ -32,18 +32,20 @@ except Exception as e:
 # ======================================================
 
 class StudentData(BaseModel):
-    Age: int = Field(..., ge=15, le=22)
-    Gender: int = Field(..., ge=0, le=1)
-    Ethnicity: int = Field(..., ge=0, le=3)
-    ParentalEducation: int = Field(..., ge=0, le=4)
-    StudyTimeWeekly: float = Field(..., ge=0, le=40)
-    Absences: int = Field(..., ge=0, le=30)
-    Tutoring: int = Field(..., ge=0, le=1)
-    ParentalSupport: int = Field(..., ge=0, le=4)
-    Extracurricular: int = Field(..., ge=0, le=1)
-    Sports: int = Field(..., ge=0, le=1)
-    Music: int = Field(..., ge=0, le=1)
-    Volunteering: int = Field(..., ge=0, le=1)
+    Age: int
+    Gender: int
+    Ethnicity: int
+    ParentalEducation: int
+    StudyTimeWeekly: float
+    Absences: int
+    Tutoring: int
+    ParentalSupport: int
+    Extracurricular: int
+    Sports: int
+    Music: int
+    Volunteering: int
+    StudentID: int
+    GradeClass: float
 
 
 class PredictionResponse(BaseModel):
@@ -104,9 +106,10 @@ def predict(student: StudentData):
 
     try:
         student_dict = student.model_dump()
+        df = pd.DataFrame([student_dict])
 
         # Predicción usando método del pipeline
-        pred = pipeline.predict_single(student_dict)
+        pred = pipeline.predict(df)
         pred = float(np.clip(pred, 0.0, 4.0))  # asegurar rango válido
 
         timestamp = datetime.now().isoformat()
